@@ -27,7 +27,6 @@ app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 app.use('/images', imageRoutes);
 
-
 app.post('/create-payment', async(req, res)=> {
   const {amount} = req.body;
   console.log(amount);
